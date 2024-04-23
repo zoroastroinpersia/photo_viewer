@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import StateHeader from './components/pages/StateHeader';
+import PhotosBody from './components/pages/PhotosBody';
+import { useState } from 'react';
+
 function App() {
+
+  const [activePanels, setActivePanels] = useState([true, false]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <StateHeader activePanels={activePanels}></StateHeader>
+      <PhotosBody setActivePanels={setActivePanels}></PhotosBody>
     </div>
   );
 }
