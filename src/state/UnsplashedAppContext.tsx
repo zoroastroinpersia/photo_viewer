@@ -4,7 +4,7 @@ import Topic from '../model/Topic';
 
 // Create the context with a default value
 
-const UNSPLASH_API_KEY = 'r4rsdiXOqFrN49W7wPegc3nr9m9AkN3AA0uikY2ba68'
+const UNSPLASH_API_KEY = 'Insert your own key'
 
 let selectedTopicId = "";
 let uiState = [true, false]
